@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*==========  Non-Mobile First  ==========*/
+img, button, input[type="submit"] {
+  max-width: 100%; }
+
+@media (max-width: 1714px) {
+  .sect_bg {
+    background: none; } }
+
+/* Широкоформатный экран — 1400px */
+@media (max-width: 1400px) {
+  .slick-arrow-l {
+    left: 30px;
+    z-index: 2; }
+  .slick-arrow-r {
+    right: 30px;
+    z-index: 2; } }
+
+/* Широкоформатный экран — 1200px */
+@media (max-width: 75.063em) {
+  .product-meta-right {
+    width: 100%; }
+  .table-cart > tbody > tr > td {
+    padding: 15px 8px; }
+  .table > thead > tr > th {
+    padding: 15px 8px; }
+  .filters label {
+    display: none; }
+  .sect_bg {
+    background: #fff; }
+  .basket {
+    margin: 10px 0; }
+  .advantages_item {
+    text-align: center; }
+    .advantages_item .icon {
+      display: inline-block;
+      float: none; }
+    .advantages_item .ai_title {
+      display: inline-block;
+      float: none; } }
+
+/* Десктоп — 992px */
+@media (max-width: 62.063em) {
+  .product-meta-left {
+    margin: 30px 0 30px 0; }
+  .nav-tabs > li {
+    width: 100%; }
+  .nav > li > a {
+    padding: 15px 30px; }
+  .contacts_tel, .contacts_email {
+    float: left;
+    margin-right: 0; }
+  .contacts_tel {
+    float: left;
+    margin-right: 30px; }
+  .slick-arrow-l {
+    left: 0;
+    z-index: 2; }
+  .slick-arrow-r {
+    right: 0;
+    z-index: 2; }
+  .slick-carousel .slick-active > div {
+    float: right;
+    margin-right: 10px; }
+  .slick-carousel .slick-active + div > div {
+    float: left;
+    margin-left: 10px; } }
+
+/* Планшеты — 768px */
+@media (max-width: 48.063em) {
+  .information {
+    padding: 13px 0 0 0px; }
+  .sw-1 {
+    text-align: right; }
+  .sw-2 {
+    text-align: left; }
+  .order-tabs .tabs-header > a {
+    width: 100%; }
+    .order-tabs .tabs-header > a:after {
+      display: none; }
+  .order-tabs .tabs-header > a.active {
+    border-bottom: none;
+    background: #850340;
+    color: #fff; }
+  .navbar .basket {
+    margin: 13px 15px 13px 0;
+    float: right; }
+  .navbar form.search.search-mobile {
+    float: left;
+    margin: 20px 5px 17px 0;
+    padding: 0;
+    width: 49%; }
+  .contacts_email {
+    float: right;
+    width: 327px;
+    color: #fff;
+    margin: 15px 0px 15px 0; }
+    .contacts_email a, .contacts_email a > i {
+      color: #fff; }
+  .contacts_tel {
+    margin: 15px 0px 15px 0; }
+    .contacts_tel a, .contacts_tel a > i {
+      color: #fff; }
+  .slick-arrow i {
+    -webkit-transform: scale(0.65);
+    transform: scale(0.65); }
+  h2 {
+    font-family: 'Caviar Dreams Bold';
+    font-weight: bold;
+    color: #850340;
+    font-size: 26px; }
+  .container {
+    padding: 0 30px; }
+  .interesting-item img {
+    max-width: 100%; }
+  .interesting-item .img-wrap {
+    height: auto; } }
+
+@media (max-width: 722px) {
+  .navbar form.search.search-mobile {
+    width: 45%; }
+  .product-full {
+    width: 100%; } }
+
+@media (max-width: 674px) {
+  .table-cart .update-cart {
+    margin: 30px auto; }
+  .related .col-xs-6, .viewed .col-xs-6, .category-products .col-xs-6 {
+    width: 100%; }
+  .category-item img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .navbar form.search.search-mobile {
+    width: 45%; }
+  form.filter {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0; } }
+
+/* Планшеты — 728px */
+@media (max-width: 712px) {
+  .basket {
+    display: none; }
+  .navbar form.search.search-mobile {
+    width: calc(100% - 90px); }
+  .mobile-basket {
+    float: left; }
+  .mobile-read {
+    display: block;
+    float: none;
+    margin: 0 auto; }
+  .contacts_email {
+    display: none; }
+  .contacts_tel {
+    margin: 15px 0px 15px 0;
+    float: right;
+    margin-right: 15px; }
+  .mobile-header .mobile-razd, .mobile-header .mobile-basket {
+    display: inline-block; }
+  .slick-carousel .slick-active > div {
+    float: none;
+    margin: 18px auto; }
+  .slick-carousel .slick-active + div > div {
+    float: none;
+    margin: 18px auto; } }
+
+/* Телефоны —  544px */
+@media (max-width: 34.063em) {
+  .soc-buttons a {
+    display: inline-block;
+    float: none; }
+  .foo-widget {
+    text-align: center; }
+    .foo-widget li {
+      width: auto;
+      margin: 0px 15px; }
+  .hidd-750 {
+    display: block; }
+  .razd-mob {
+    display: block; }
+  .interesting .col-xs-6 {
+    width: 100%; }
+  footer .col-xs-6 {
+    width: 100%; }
+  .social-widget {
+    display: none; } }
+
+/* Телефоны —  496px */
+@media (max-width: 496px) {
+  .contacts_tel {
+    display: none; } }
+
+/* Айфон в портретном режиме — 320px */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lZGlhLmNzcyIsIm1lZGlhLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBQWlCO0FDQWpCLDRDQUE0QztBQUM1QztFQUNDLGdCQUFnQixFQUNoQjs7QUFFRDtFQUNBO0lBQ0ksaUJBQWlCLEVBQ3BCLEVBQUE7O0FBR0Qsb0NBQUE7QUFDQTtFQUNDO0lBQ0MsV0FBVztJQUNYLFdBQVcsRUFDWDtFQUNEO0lBRUMsWUFBWTtJQUNaLFdBQVcsRUFDWCxFQUFBOztBQUdGLG9DQUFBO0FBQ0E7RUFDQztJQUNDLFlBQVksRUFDWjtFQUNEO0lBQ0Msa0JBQWtCLEVBQ2xCO0VBQ0Q7SUFDQyxrQkFBa0IsRUFDbEI7RUFDRDtJQUNDLGNBQWMsRUFDZDtFQUNEO0lBQ0MsaUJBQWlCLEVBQ2pCO0VBQ0Q7SUFDQyxlQUFlLEVBQ2Y7RUFDRDtJQUNDLG1CQUFtQixFQVNuQjtJQVZEO01BR0Usc0JBQXNCO01BQ3RCLFlBQVksRUFDWjtJQUxGO01BT0Usc0JBQXNCO01BQ3RCLFlBQVksRUFDWixFQUFBOztBQUlILHFCQUFBO0FBQ0E7RUFDQztJQUNDLHNCQUFzQixFQUN0QjtFQUNEO0lBQ0MsWUFBWSxFQUNaO0VBQ0Q7SUFDQyxtQkFBbUIsRUFDbkI7RUFDRDtJQUNDLFlBQVk7SUFDWixnQkFBZ0IsRUFDaEI7RUFDRDtJQUNDLFlBQVk7SUFDWixtQkFBbUIsRUFDbkI7RUFDRDtJQUNDLFFBQVE7SUFDUixXQUFXLEVBQ1g7RUFDRDtJQUNDLFNBQVM7SUFDVCxXQUFXLEVBQ1g7RUFDRDtJQUdHLGFBQWE7SUFDYixtQkFBbUIsRUFDbkI7RUFMSDtJQVdHLFlBQVk7SUFDWixrQkFBa0IsRUFDbEIsRUFBQTs7QUFPSixzQkFBQTtBQUNBO0VBQ0M7SUFDQyxzQkFBc0IsRUFDdEI7RUFDRDtJQUNDLGtCQUFrQixFQUNsQjtFQUNEO0lBQ0MsaUJBQWlCLEVBQ2pCO0VBQ0Q7SUFDQyxZQUFZLEVBSVo7SUFMRDtNQUdFLGNBQWMsRUFDZDtFQUVGO0lBQ0Msb0JBQW9CO0lBQ3BCLG9CQUFvQjtJQUNwQixZQUFZLEVBQ1o7RUFFRDtJQUVFLHlCQUF5QjtJQUN6QixhQUFhLEVBQ2I7RUFKRjtJQU1FLFlBQVk7SUFDWix3QkFBd0I7SUFDeEIsV0FBVztJQUNYLFdBQVcsRUFDWDtFQUdGO0lBQ0MsYUFBYTtJQUNiLGFBQWE7SUFDYixZQUFZO0lBQ1osd0JBQXdCLEVBSXhCO0lBUkQ7TUFNRSxZQUFZLEVBQ1o7RUFFRjtJQUNDLHdCQUF3QixFQUl4QjtJQUxEO01BR0UsWUFBWSxFQUNaO0VBSUY7SUFFRSwrQkFBZ0I7SUFBaEIsdUJBQWdCLEVBQ2hCO0VBR0Y7SUFDQyxrQ0FBa0M7SUFDbEMsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixnQkFBZ0IsRUFDaEI7RUFDRDtJQUNDLGdCQUFnQixFQUNoQjtFQUNEO0lBRUUsZ0JBQWdCLEVBQ2hCO0VBSEY7SUFLRSxhQUFhLEVBQ2IsRUFBQTs7QUFHSDtFQUNDO0lBQ0MsV0FBVyxFQUNYO0VBQ0Q7SUFDQyxZQUFZLEVBQ1osRUFBQTs7QUFFRjtFQUNDO0lBQ0csa0JBQWtCLEVBQ3JCO0VBQ0E7SUFDQyxZQUFZLEVBQ1o7RUFDRDtJQUNDLFlBQVk7SUFDWixvQkFBb0IsRUFDcEI7RUFDRDtJQUNDLFdBQVcsRUFDWDtFQUNEO0lBQ0MsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixjQUFjLEVBQ2QsRUFBQTs7QUFFRixzQkFBQTtBQUNBO0VBQ0M7SUFDQyxjQUFjLEVBQ2Q7RUFDRDtJQUNDLHlCQUFXLEVBQ1g7RUFDRDtJQUNDLFlBQVksRUFDWjtFQUVEO0lBQ0MsZUFBZTtJQUNmLFlBQVk7SUFDWixlQUFlLEVBQ2Y7RUFDRDtJQUNDLGNBQWMsRUFDZDtFQUNEO0lBQ0Msd0JBQXdCO0lBQ3hCLGFBQWE7SUFDYixtQkFBbUIsRUFDbkI7RUFDRDtJQUVFLHNCQUFzQixFQUN0QjtFQUtGO0lBQ0MsWUFBWTtJQUNaLGtCQUFrQixFQUNsQjtFQUNEO0lBQ0MsWUFBWTtJQUNaLGtCQUFrQixFQUNsQixFQUFBOztBQUdGLHVCQUFBO0FBQ0E7RUFDQztJQUNDLHNCQUFzQjtJQUN0QixZQUFZLEVBRVo7RUFDRDtJQUNDLG1CQUFtQixFQU9uQjtJQVJEO01BSUUsWUFBWTtNQUNaLGlCQUFpQixFQUNqQjtFQUlGO0lBQ0MsZUFBZSxFQUNmO0VBQ0Q7SUFDQyxlQUFlLEVBQ2Y7RUFDRDtJQUNDLFlBQVksRUFDWjtFQUNEO0lBQ0MsWUFBWSxFQUNaO0VBQ0Q7SUFDQyxjQUFjLEVBQ2QsRUFBQTs7QUFHRix1QkFBQTtBQUNBO0VBQ0M7SUFDQyxjQUFjLEVBQ2QsRUFBQTs7QUFJRix1Q0FBQSIsImZpbGUiOiJtZWRpYS5jc3MiLCJzb3VyY2VSb290IjoiL2FwcC9zY3NzIn0= */

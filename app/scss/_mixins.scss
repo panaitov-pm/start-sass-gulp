@@ -1,0 +1,28 @@
+// Моя подборка миксинов
+
+@mixin button-light($bg:#000,$color:#fff,$height:33px,$width:68px,$padding:0 10px,$border:none,$border-radius: 0){
+	background: $bg;
+	color: $color;
+	height: $height;
+	min-width: $width;
+	padding: $padding;
+	border: $border;
+	transition: all 0.3s ease;
+	border-radius:$border-radius;
+	&:hover{
+		background: darken($bg, 10%) 
+	}
+}
+@mixin button-dark($bg:#000,$color:#fff,$height:33px,$width:68px,$padding:0 10px,$border:none,$border-radius: 0){
+	background: $bg;
+	color: $color;
+	height: $height;
+	min-width: $width;
+	padding: $padding;
+	border: $border;
+	transition: all 0.3s ease;
+	border-radius:$border-radius;
+	&:hover{
+		background: lighten($bg, 10%) 
+	}
+}
