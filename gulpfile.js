@@ -20,10 +20,10 @@ var config={
   //Общие настройки
   
   // настройки FTP
-  ftpServer:'grand-present.profglobal.ru',
+  ftpServer:'evaline.profglobal.ru',
   ftpUser:'karakushan',
   ftpPassword:'jeremy1519',
-  ftpPath:'/domains/grand-present.profglobal.ru/',
+  ftpPath:'/domains/evaline.profglobal.ru/',
 
 }
 
@@ -35,6 +35,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch('app/img/icons/*.png', ['sprite']).on('change', browserSync.reload);
   gulp.watch('app/img/**', ['compress']).on('change', browserSync.reload);
   gulp.watch("app/scss/*.scss", ['sass']);
+  gulp.watch("app/fonts/**", ['fonts:build']);
   gulp.watch("app/*.html",['html:build']);
   gulp.watch("app/plugins/**",['plugins:build']).on('change', browserSync.reload);
   gulp.watch("app/js/*.js",['js:build']).on('change', browserSync.reload);
@@ -104,7 +105,7 @@ gulp.task('ftp', function () {
 gulp.task('sass', function() {
   return gulp.src("app/scss/*.scss")
   .pipe(sourcemaps.init({loadMaps: true}))
-  .pipe(sass())
+  .pipe(sass({outputStyle: 'expanded'}))
   .pipe(autoprefixer({
    browser: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
