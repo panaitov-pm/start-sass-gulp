@@ -20,10 +20,10 @@ var config={
   //Общие настройки
   
   // настройки FTP
-  ftpServer:'evaline.profglobal.ru',
-  ftpUser:'karakushan',
-  ftpPassword:'jeremy1519',
-  ftpPath:'/domains/evaline.profglobal.ru/',
+  ftpServer:'',
+  ftpUser:'',
+  ftpPassword:'',
+  ftpPath:'',
 
 }
 
