@@ -1,4 +1,4 @@
-//npm init
+//Первым делом запустить в консоли сроку ниже для установки обновления пакетов
 //npm i --save-dev gulp browser-sync gulp-sass gulp.spritesmith gulp-autoprefixer gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin gulp-uglify gulp-rename gulp-minify-css gulp-plumber
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
