@@ -1,4 +1,5 @@
-//Первым делом запустить в консоли сроку ниже для установки обновления пакетов
+//Первым делом запустить в консоли сроки ниже для установки обновления пакетов
+//npm init
 //npm i --save-dev gulp browser-sync gulp-sass gulp.spritesmith gulp-autoprefixer gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin gulp-uglify gulp-rename gulp-minify-css gulp-plumber
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
@@ -107,7 +108,7 @@ gulp.task('sass', function() {
   .pipe(sourcemaps.init({loadMaps: true}))
   .pipe(sass({outputStyle: 'expanded'}))
   .pipe(autoprefixer({
-   browser: ['last 3 version', "> 1%", "ie 8", "ie 7"],
+   browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
  }))
   .on('error', function (err) {
