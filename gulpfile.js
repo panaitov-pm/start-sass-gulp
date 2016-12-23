@@ -1,6 +1,5 @@
-//Первым делом запустить в консоли сроки ниже для установки обновления пакетов
-//npm init
-//npm i --save-dev gulp browser-sync gulp-sass gulp.spritesmith gulp-autoprefixer gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin gulp-uglify gulp-rename gulp-minify-css gulp-plumber
+//Первым делом запустить npm update для обновления, получения пакетовЮ
+//которые перечисленны в package.json
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
@@ -51,8 +50,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch('app/img/**', ['compress']).on('change', browserSync.reload);
   gulp.watch("app/scss/*.scss", ['sass']);
   gulp.watch("app/fonts/**", ['fonts:build']);
-  gulp.watch("app/*.html",['html:build']);
-  gulp.watch("app/plugins/**",['plugins:build']).on('change', browserSync.reload);
+  gulp.watch("app/html/**/*.html",['html:build']);
   gulp.watch("app/js/*.js",['js:build']).on('change', browserSync.reload);
   gulp.watch("dist/*.html").on('change', browserSync.reload);
 });
@@ -82,7 +80,7 @@ gulp.task('js:build', function () {
 
 // таск для билдинга html
 gulp.task('html:build', function () {
-    gulp.src('app/*.html') //Выберем файлы по нужному пути
+    gulp.src('app/html/**/*.html') //Выберем файлы по нужному пути
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -94,12 +92,6 @@ gulp.task('html:build', function () {
 gulp.task('fonts:build', function() {
   gulp.src('app/fonts/**')
   .pipe(gulp.dest('dist/fonts'));
-});
-
-// билдим плагины
-gulp.task('plugins:build', function() {
-  gulp.src('app/plugins/**')
-  .pipe(gulp.dest('dist/plugins'));
 });
 
 //ФТП загрузка файлов
@@ -154,7 +146,7 @@ gulp.task('sprite', function () {
 
 });
 
-gulp.task('build', ['sprite','compress','sass','plugins:build','fonts:build','js:build','html:build'],function () {
+gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build'],function () {
  browserSync.reload();
 });
 
