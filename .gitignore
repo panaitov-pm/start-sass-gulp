@@ -1,4 +1,9 @@
 /node_modules
 /dist
 /app/img/*
+/app/font/*
+/app/js/*
+/app/*.html
 !/app/img/.gitkeep.txt
+!/app/fonts/.gitkeep.txt
+!/app/js/.gitkeep.txt
