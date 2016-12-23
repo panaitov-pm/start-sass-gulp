@@ -19,14 +19,28 @@ var plumber = require("gulp-plumber");
 //Базовые настройки
 var config={
   //Общие настройки
-  
-  // настройки FTP
-  ftpServer:'',
-  ftpUser:'',
-  ftpPassword:'',
-  ftpPath:'',
+    npmPath:"node_modules/", //путь к папке  NPM модулями
+    ftp:{
+      ftpServer:"",
+      ftpUser:"",
+      ftpPassword:"",
+      ftpPath:"",
+    },
+    plugins:["bootstrap","bootstrap-select"]
 
-}
+  }
+
+//копирует NPM модули в папку сайта
+gulp.task('npm:plugins',function(){
+  var modules=config.plugins;
+  var modPath=[];
+  for (var key in modules) {
+    modPath[key]=config.npmPath+modules[key]+'/**/*';
+    console.log('copy module: '+modPath[key]);
+    gulp.src(modPath[key])
+    .pipe(gulp.dest('dist/plugins/'+modules[key]));
+  }
+});
 
 // Static Server + watching all files
 gulp.task('serve', ['build'], function() {
@@ -55,23 +69,21 @@ gulp.task('compress', function() {
   .pipe(gulp.dest('dist/img'))
 });
 
-
-
-// билдинг яваскрипта
+// билдинг js
 gulp.task('js:build', function () {
     gulp.src('app/js/*.js') //Найдем наш main файл
-        .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/js'))
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(rename({suffix: '.min'})) //добавим суффикс .min к выходному файлу
         .pipe(gulp.dest('dist/js')); //выгрузим готовый файл в build
-     });
+      });
 
 // таск для билдинга html
 gulp.task('html:build', function () {
     gulp.src('app/*.html') //Выберем файлы по нужному пути
-        .pipe(fileinclude({
+    .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
@@ -94,10 +106,10 @@ gulp.task('plugins:build', function() {
 gulp.task('ftp', function () {
   return gulp.src('dist/**/*')
   .pipe(ftp({
-    host: config.ftpServer,
-    user: config.ftpUser,
-    pass: config.ftpPassword,
-    remotePath:config.ftpPath
+    host: config.ftp.ftpServer,
+    user: config.ftp.ftpUser,
+    pass: config.ftp.ftpPassword,
+    remotePath:config.ftp.ftpPath
   }))
   .pipe(gutil.noop());
 });
@@ -119,7 +131,7 @@ gulp.task('sass', function() {
   .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
-// Автомастическое создание спрайтов
+// Автоматическое создание спрайтов
 gulp.task('sprite', function () {
   var spriteData = gulp.src('app/img/icons/*.png')
   .pipe(spritesmith({
@@ -143,7 +155,7 @@ gulp.task('sprite', function () {
 });
 
 gulp.task('build', ['sprite','compress','sass','plugins:build','fonts:build','js:build','html:build'],function () {
-   browserSync.reload();
+ browserSync.reload();
 });
 
 gulp.task('default', ['serve']);
