@@ -1,6 +1,7 @@
 /node_modules
 /dist
 /app/img/*
+/app/plugins
 /app/fonts/*
 /app/js/*
 /app/*.html

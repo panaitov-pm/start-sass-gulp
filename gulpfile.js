@@ -26,7 +26,7 @@ var config={
       ftpPassword:"",
       ftpPath:"",
     },
-    plugins:["bootstrap","bootstrap-select"]
+    plugins:["bootstrap","bootstrap-select","slick-carousel"]
 
   }
 
