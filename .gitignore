@@ -4,7 +4,8 @@
 /app/plugins
 /app/fonts/*
 /app/js/*
-/app/*.html
+/app/html/*
 !/app/img/.gitkeep.txt
 !/app/fonts/.gitkeep.txt
 !/app/js/.gitkeep.txt
+!/app/html/.gitkeep.txt
