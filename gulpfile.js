@@ -14,6 +14,7 @@ var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var cssmin = require('gulp-minify-css');
 var plumber = require("gulp-plumber");
+var csscomb = require("gulp-csscomb");
 
 //Базовые настройки
 var config={
@@ -25,7 +26,8 @@ var config={
       ftpPassword:"",
       ftpPath:"",
     },
-    plugins:["bootstrap","bootstrap-select","slick-carousel"]
+    plugins:["bootstrap","bootstrap-select","slick-carousel","bootstrap-vertical-tabs",
+    "holderjs"]
 
   }
 
