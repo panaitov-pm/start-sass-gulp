@@ -26,7 +26,7 @@ var config={
       ftpPassword:"",
       ftpPath:"",
     },
-    plugins:["bootstrap","bootstrap-select","slick-carousel","bootstrap-vertical-tabs",
+    plugins:["jquery","bootstrap","bootstrap-select","slick-carousel","bootstrap-vertical-tabs",
     "holderjs"]
 
   }
@@ -148,7 +148,7 @@ gulp.task('sprite', function () {
 
 });
 
-gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build'],function () {
+gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins'],function () {
  browserSync.reload();
 });
 

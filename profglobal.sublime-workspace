@@ -1,0 +1,1092 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_term",
+				"get_term_link\t(works.php)"
+			],
+			[
+				"ото",
+				"отображаться"
+			],
+			[
+				"es_post",
+				"es_post_meta"
+			],
+			[
+				"wp_res",
+				"wp_reset_postdata"
+			],
+			[
+				"es_po",
+				"es_post_meta($meta_key, $post_id, $args)\tstring"
+			],
+			[
+				"the",
+				"theloop\tThe Loop"
+			],
+			[
+				"категор",
+				"категория"
+			],
+			[
+				"es_blo",
+				"es_block"
+			],
+			[
+				"wp_n",
+				"wp_nav_menu\twp_nav_menu All Options"
+			],
+			[
+				"wp_pa",
+				"wp_parse_args"
+			],
+			[
+				"get_post_th",
+				"get_the_post_thumbnail_url〔function〕"
+			],
+			[
+				"WP_Qu",
+				"WP_Query"
+			],
+			[
+				"strip",
+				"strip_tags〔function〕"
+			],
+			[
+				"wp_en",
+				"wp_enqueue\tWordPress Enqueue Script"
+			],
+			[
+				"add",
+				"add_filter"
+			],
+			[
+				"is_user",
+				"is_user_logged_in"
+			],
+			[
+				"sanitize_te",
+				"sanitize_text_field\t(FS_Ajax_Class.php)"
+			],
+			[
+				"query",
+				"query_posts"
+			],
+			[
+				"fs_p",
+				"fs_product_count\t(functions.php)"
+			],
+			[
+				"get_cur",
+				"get_current_user〔function〕"
+			],
+			[
+				"if",
+				"if\tif …"
+			],
+			[
+				"зак",
+				"заказчику"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fs_th",
+				"fs_the_price($post_id, $wrap)\tmixed"
+			],
+			[
+				"js",
+				"jQuery.parseJSON\tjQuery.parseJSON"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"qu",
+				"query〔function〕"
+			],
+			[
+				"wp",
+				"wpdb"
+			],
+			[
+				"con",
+				"confirm〔function〕"
+			],
+			[
+				"th",
+				"this\t$(this)"
+			],
+			[
+				"wp_nonce",
+				"wp_nonce_url\t(albatross.php)"
+			],
+			[
+				"wh",
+				"wholesale_buyer"
+			],
+			[
+				"al_get",
+				"al_get_id"
+			],
+			[
+				"term_ex",
+				"term_exists〔function〕"
+			],
+			[
+				"stat",
+				"static〔keyword〕"
+			],
+			[
+				"wp_get_a",
+				"wp_get_attachment_url〔function〕"
+			],
+			[
+				"is_nu",
+				"is_numeric〔function〕"
+			],
+			[
+				"I",
+				"FS_Images_Class\tFS_Images_Class"
+			],
+			[
+				"get_ser",
+				"get_search_query\t(search.php)"
+			],
+			[
+				"ec",
+				"echo\techo \"…\""
+			],
+			[
+				"select",
+				"selected〔function〕"
+			],
+			[
+				"sh",
+				"shortcode_atts"
+			],
+			[
+				"wp_get_cu",
+				"wp_get_current_user"
+			],
+			[
+				"vali",
+				"validator"
+			],
+			[
+				"admin",
+				"admin_email"
+			],
+			[
+				"fs_lo",
+				"fs_login_form()\tmixed"
+			],
+			[
+				"wp_login",
+				"wp_login_form"
+			],
+			[
+				"fadeIn",
+				"fadeIn"
+			],
+			[
+				"form-",
+				"form-info\t(profile.php)"
+			],
+			[
+				"prin",
+				"print_r〔function〕"
+			],
+			[
+				"wp_no",
+				"wp_nonce_field〔function〕"
+			],
+			[
+				"get_po",
+				"get_posts〔function〕"
+			],
+			[
+				"fs_cart",
+				"fs_cart_url\t(functions.php)"
+			],
+			[
+				"fade",
+				"fadeOut\t.fadeOut()"
+			],
+			[
+				"pare",
+				"parents\t.parents()"
+			],
+			[
+				"have",
+				"have_posts〔function〕"
+			],
+			[
+				"check",
+				"checked\t(styles.css)"
+			],
+			[
+				"meta_value",
+				"meta_value_num\t(FS_Filters.php)"
+			],
+			[
+				"meta",
+				"meta_value"
+			],
+			[
+				"uns",
+				"unserialize〔function〕"
+			],
+			[
+				"object",
+				"object_id"
+			],
+			[
+				"print",
+				"print_r($query"
+			],
+			[
+				"get_pos",
+				"get_post_meta"
+			],
+			[
+				"update_post",
+				"update_post_meta〔function〕"
+			],
+			[
+				"chec",
+				"checked\t(functions.php)"
+			],
+			[
+				"strp",
+				"strpos〔function〕"
+			],
+			[
+				"met",
+				"meta_key\t(functions.php)"
+			],
+			[
+				"end",
+				"endif〔keyword〕"
+			],
+			[
+				"cur",
+				"current_user"
+			],
+			[
+				"fs_get",
+				"fs_get_price"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"ter",
+				"term_id"
+			],
+			[
+				"holder",
+				"holder.js/96x96\t(front-page.php)"
+			],
+			[
+				"wp_get_ata",
+				"wp_get_attachment_url\t(taxonomy-brand.php)"
+			],
+			[
+				"u",
+				"user_email〔variable〕"
+			],
+			[
+				"pa",
+				"parts/"
+			],
+			[
+				"togg",
+				"toggleClass\t.toggleClass()"
+			],
+			[
+				"home",
+				"home_url〔function〕"
+			],
+			[
+				"c",
+				"charset"
+			],
+			[
+				"the_ti",
+				"the_title〔function〕"
+			],
+			[
+				"the_post",
+				"the_post_thumbnail〔function〕"
+			],
+			[
+				"data-fs",
+				"data-fs-type"
+			],
+			[
+				"fs",
+				"fs_filter"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"parse",
+				"parse_str〔function〕"
+			],
+			[
+				"get_term_",
+				"get_term_by"
+			],
+			[
+				"term_",
+				"term_parent"
+			],
+			[
+				"att",
+				"attr\t.attr() - single"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"moda",
+				"modal-body"
+			],
+			[
+				"labe",
+				"label-float"
+			],
+			[
+				"pr",
+				"prop\t.prop() - multiple"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"img",
+				"img\tImage - Placeholder"
+			],
+			[
+				"get_te",
+				"get_template_directory_uri〔function〕"
+			],
+			[
+				"get_tit",
+				"get_the_title〔function〕"
+			],
+			[
+				"get_theme_",
+				"get_theme_mod〔function〕"
+			],
+			[
+				"_Se",
+				"$_SESSION〔variable〕"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"quer",
+				"query_posts"
+			],
+			[
+				"p",
+				"php\t<?php … ?>"
+			],
+			[
+				"get_the",
+				"get_the_ID"
+			],
+			[
+				"data",
+				"data-toggle"
+			],
+			[
+				"menu_o",
+				"$menu_order〔variable〕"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"the_",
+				"the_ID〔function〕"
+			],
+			[
+				"wp_reset",
+				"wp_reset_query"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"arr",
+				"arr_url"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"get_foo",
+				"get_footer〔function〕"
+			],
+			[
+				"lorem",
+				"lorem\tlorem - HTML Kitchen sink"
+			],
+			[
+				"bs3-te",
+				"bs3-template:html5\tbs3-html5-template"
+			],
+			[
+				"WP_Q",
+				"WP_Query"
+			],
+			[
+				"wp_rese",
+				"wp_reset_query〔function〕"
+			],
+			[
+				"dar",
+				"dark-sect"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"wp_enq",
+				"wp_enqueue_style〔function〕"
+			],
+			[
+				"blo",
+				"bloginfo\t(header.php)"
+			],
+			[
+				"clo",
+				"close-1.png\tw:22 h:22"
+			],
+			[
+				"str_re",
+				"str_replace〔function〕"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"get_lo",
+				"get_locale〔function〕"
+			],
+			[
+				"get_ter",
+				"get_term_meta〔function〕"
+			],
+			[
+				"endfo",
+				"endforeach〔keyword〕"
+			],
+			[
+				"trsf",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "au",
+		"selected_items":
+		[
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"fe",
+				"Fetch: Package"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 296.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Мої сайти/Profglobal.ru/start-sass-gulp"
+	],
+	"file_history":
+	[
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/single-person.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/index.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/taxonomy-services-category.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/header.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/footer.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-config.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/lib/ES_shortcode.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/single-services.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/es-config.json",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/scss/style.scss",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/page.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/works.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/contact.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/full-width.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/about-us.php",
+		"/E/serv/OpenServer/domains/dentaspa/dentaspa/scss/style.scss",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/fonts/stylesheet.css",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/functions/functions.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/js/easy-start-admin.js",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/css/easy-start.css",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/doctors.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/price.php",
+		"/E/serv/OpenServer/domains/dentaspa/dentaspa/doctors.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/FAQ.php",
+		"/E/serv/OpenServer/domains/dentaspa/dentaspa/services.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/part/service.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/templates/field/taxonomy.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/functions.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/lib/ES_taxonomies.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/header-home.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/header.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/templates/field/image.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/css/style.css",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/servic-3.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/servic-2.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/reviews.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/style.css",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/plugins/easy-start/templates/easy-start-import-export.php",
+		"/E/serv/OpenServer/domains/dentaspa/wp-content/themes/dentaspa/js/script.js",
+		"/E/freelance/CDMA/start-sass-gulp/app/scss/styles.scss",
+		"/E/freelance/CDMA/start-sass-gulp/app/fonts/ElektraTextPro/styles.css",
+		"/E/freelance/CDMA/start-sass-gulp/dist/fonts/ElektraTextPro/styles.css",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/search.php",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/header.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Ajax_Class.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/templates/back-end/settings.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/functions/filters.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/functions/functions.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/albatross/filters.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/albatross/functions.php",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/css/styles.css",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/fast-shop/livesearch/livesearch.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Export_Class.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/templates/front-end/order/products-list.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Images_Class.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/albatross/albatross.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/page.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/style.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/footer.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/fast-shop.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Config.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Users_Class.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Orders_Class.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/product.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/slider.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/templates/back-end/orders.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Settings_Class.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/assets/js/fs-admin.js",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/assets/css/fs-admin.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/styles.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/FS_Shortcode.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/single.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/content.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/robots.txt",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/albatross/actions.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/FS_Filters.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/albatross.php",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/taxonomy-catalog.php",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/js/main.js",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/vsftpd.conf",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Filters.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/functions/attributes.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/actions.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/C/Users/karak/Desktop/products.yml",
+		"/E/OpenServer/domains/grand-present/wp-content/uploads/shop/products.yml",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/index.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/fasterthemes.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/fasterthemes_framework.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/base.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/custom.css",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/class-tgm-plugin-activation.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/custom-header.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/wix-author-information.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/wix-post-tag-widget.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/home.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Action_Class.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/FS_Images_Class.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/footer 2.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/taxonomy.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Init.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/lib/FS_Post_Type.php",
+		"/E/OpenServer/domains/grand-present/wp-content/uploads/shop/products.xml",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/single-product.php",
+		"/E/Мої сайти/VPS/данные.txt",
+		"/C/Users/karak/Desktop/MYSQL.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/wp-config 2.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/.htaccess 2",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/wp-config 3.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/assets/js/fast-shop.js",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/style.css",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/searchform.php",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/footer.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/easy-start/functions/functions.php",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/fast-shop/assets/css/fast-shop.css",
+		"/E/OpenServer/domains/grand-present/wp-content/themes/grand-present/inc/product-search.php",
+		"/E/Мої сайти/gnosa.com.ua/данные.txt",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-3/footer.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-3/header.php",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/crontab",
+		"/E/OpenServer/domains/grand-present/wp-content/plugins/albatross/log.txt",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/media.css",
+		"/E/openserver/modules/cron/cron.tab",
+		"/C/Users/karak/AppData/Local/Temp/fz3temp-2/log.txt"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"*.html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"reviews",
+			"сертификаты",
+			"true",
+			"grafik",
+			"adress",
+			"url(images",
+			"src=\"images",
+			"url(images",
+			"src=\"images",
+			"url(images",
+			"id",
+			"type",
+			"meta_key",
+			"url(images",
+			"url(/wp-content/themes/dentaspa/images",
+			"terms",
+			"taxonomy",
+			"es_block_shortcode",
+			"es_block",
+			"src=\"images",
+			"url(images/",
+			"false",
+			"Специализации",
+			"src=\"images",
+			"url(images",
+			"src=\"images",
+			"url(images",
+			"src=\"images",
+			"(){\n",
+			"background-image: url(images",
+			"person",
+			"image",
+			"portfolio",
+			"product",
+			"textarea",
+			"portfolio",
+			"faq",
+			"total",
+			"slider",
+			"комментарий",
+			"Слайдеры",
+			"src=\"images",
+			"url(../images",
+			"url(images",
+			"src=\"images",
+			"timepicker",
+			"email",
+			"product_id",
+			"al_set_product_id",
+			"company_name",
+			"email_sender",
+			"company_name",
+			"отправитель",
+			"коллекция",
+			"‘(.*?)’",
+			"<div class=\"col-title-2\">(.*?)</div>",
+			"<div class=\"col-title-1\">(.*?)</div>",
+			"<div class=\"item-filter\"></div>",
+			"<div class=\"col-text\">(.*?)</div>",
+			"verify_html",
+			"’",
+			"‘",
+			"fs_order_product_list",
+			"http_key",
+			"opt_user_message",
+			"local_root",
+			"                                    \n",
+			"int",
+			"Письма",
+			"Акции",
+			"Страницы",
+			"Пользователи",
+			"Сообщения",
+			"Галерея",
+			"export_shedule",
+			"xport_shedule",
+			"company_name",
+			"image_placeholder",
+			"name",
+			"http://новый_домен.com",
+			"http://старый_домен.com",
+			"&nbsp;",
+			"height",
+			"http://newdomain.ru",
+			"http://domain.ru",
+			"false",
+			"true",
+			"false",
+			"характеристики",
+			"удалить",
+			"Загрузить",
+			"Артикул",
+			"Цена",
+			"виберите",
+			"заказов",
+			"itsthetable",
+			"виберите",
+			"http://новый_домен.com",
+			"http://старый_домен.com",
+			"http://cube44.ua",
+			"Войти",
+			"Отправить",
+			"name=\"(.*?)\"",
+			"name=\"^(.*)\"",
+			"Сохранить",
+			"елефон",
+			"www.cube44.ua",
+			"border-color: #8d7149;",
+			"fs_att",
+			"fs_email",
+			"post_id",
+			"safe_mode_include_dir",
+			"safe_mode",
+			"safe_mode_gid",
+			"$key",
+			"font-family: \"Droid Sans\";",
+			"utf8mb4",
+			"utf8mb4_unicode_520_ci",
+			"CHARSET=utf8",
+			"utf8mb4",
+			"utf8mb4_unicode_520_ci",
+			"font-family: \"InfinitiBrand-Light\", sans-serif;",
+			"  font-family: 'InfinitiBrand-Light';",
+			"font-family: MetaPro;",
+			" font-family: 'Myriad Pro', sans-serif;",
+			"font-family: DroidSans;",
+			"font-family: \"MetaPro\";",
+			"font-family: droid sans, sans-serif;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images",
+			"url(images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images/",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"background-image: url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"url(/wp-content/themes/dentaspa/images",
+			"src=\"/wp-content/themes/dentaspa/images",
+			"колекція",
+			"'$1'",
+			"<span class=\"col-title-2\">$1</span>",
+			"<span class=\"col-title-1\">$1</span>",
+			"<span class=\"item-filter\"></span>",
+			"'",
+			"http://dnepr.profglobal.ru/",
+			"http://buddnepr.profglobal.ru/",
+			"",
+			"http://grand-present",
+			"http://139.59.143.207",
+			"выберите",
+			"fs-table",
+			"выберите",
+			"http://139.59.143.207",
+			"http://grand-present",
+			"http://cube44.com.ua",
+			"name=\"fs-form[$1]\"",
+			"cube44.ua",
+			"border: 1px solid #8d7149;",
+			"$material->slug",
+			"",
+			"utf8",
+			"utf8_general_ci",
+			"utf8mb4",
+			"CHARSET=utf-8",
+			"utf8CHARSET=utf-8",
+			"utf8",
+			" font-family: 'InfinitiBrand-Light';",
+			"",
+			"font-family: 'InfinitiBrand-Light';",
+			"InfinitiBrand-Light",
+			"<div class=\"h4\">",
+			"</div>",
+			"<div class=\"h4\">",
+			"/wp-content/themes/tire-shop",
+			"utf8mb4_general_ci",
+			"",
+			"</div>",
+			"<div class=\"h3\">",
+			"h2",
+			"</div>",
+			"<div class=\"h3\">",
+			"</div>",
+			"<div class=\"h3\">",
+			"$link",
+			"[text* $1 ]",
+			"This field is required",
+			"<div class=\"h4\">$1</div>",
+			"<div class=\"h2\">$1</div>",
+			"<div class=\"h4\">$1</div>",
+			"</div>",
+			"<div class=h4>",
+			"",
+			"$home_text",
+			"",
+			".aa-form-control",
+			"form-group",
+			"col-sm-6 col-md-3",
+			"src=\"<?php echo get_template_directory_uri() ?>/img",
+			"col-sm-4 col-md-4",
+			"col-xs-6 col-sm-4",
+			"</div>",
+			"<div class=\"strike\">",
+			"",
+			"</div>",
+			"<div class=\"strike\">",
+			"src=\"/wp-content/themes/document.com/images",
+			"src=\"<?php echo get_template_directory_uri(); ?>/images",
+			"</div>",
+			"<div class=\"strike\">",
+			"",
+			"alt=\"placeholder\"",
+			"src=\"/wp-content/themes/cube44/img",
+			"src=\"<?php echo get_template_directory_uri(); ?>/img",
+			">\n",
+			";\n",
+			"",
+			";\n",
+			"col-md-4",
+			"/wp-content/themes/bando"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 83.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 91.0
+	},
+	"pinned_build_system": "",
+	"project": "profglobal.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\OpenServer\\domains\\cube44\\cube44.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
