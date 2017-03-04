@@ -1,4 +1,4 @@
-//Первым делом запустить npm update для обновления, получения пакетовЮ
+//Первым делом запустить npm update для обновления, получения пакетов
 //которые перечисленны в package.json
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
@@ -26,8 +26,9 @@ var config={
       ftpPassword:"",
       ftpPath:"",
     },
-    plugins:["jquery","bootstrap","bootstrap-select","slick-carousel","bootstrap-vertical-tabs",
-    "holderjs"]
+    plugins:["holderjs"],
+    imgPath:"app/img/",
+    scssPath:"app/scss/" 
 
   }
 
@@ -44,7 +45,7 @@ gulp.task('npm:plugins',function(){
 });
 
 // Static Server + watching all files
-gulp.task('serve', ['build'], function() {
+gulp.task('serve', function() {
   browserSync.init({
     server: "./dist"
   });
@@ -130,9 +131,17 @@ gulp.task('sprite', function () {
   var spriteData = gulp.src('app/img/icons/*.png')
   .pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.css',
-    cssOpts: {
-      cssSelector: function (item) {
+    cssName: 'sprite.scss',
+    cssVarMap: function (sprite) {
+     if (sprite.name.indexOf('-hover') !== -1){
+       sprite.name ='.icon-' + sprite.name.replace('-hover', ':hover');
+     }else{
+       sprite.name = 'icon-' + sprite.name;
+     }
+   },
+   imgPath:'/img/sprite.png',
+   cssOpts: {
+    cssSelector: function (item) {
                 // If this is a hover sprite, name it as a hover one (e.g. 'home-hover' -> 'home:hover')
                 if (item.name.indexOf('-hover') !== -1) {
                   return '.icon-' + item.name.replace('-hover', ':hover');
@@ -144,7 +153,8 @@ gulp.task('sprite', function () {
                 }
               }
             }));
-  spriteData.pipe(gulp.dest('dist/css/'));
+  spriteData.css.pipe(gulp.dest(config.scssPath));
+  spriteData.img.pipe(gulp.dest(config.imgPath));
 
 });
 
@@ -152,4 +162,4 @@ gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:bu
  browserSync.reload();
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['build','serve']);

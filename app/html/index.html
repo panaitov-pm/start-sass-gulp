@@ -4,21 +4,696 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title Page</title>
-
-
-	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	<title>Главная</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<h1 class="text-xs-center">Hello World</h1>
+	<header>
 
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-	<!-- Мои скрипты -->
-	<script src="js/main.js"></script>
+		<a href="#" class="logo-top"><img src="img/logo.png"></a>
+	</header>
+	<div class="container">
+		<div class="top-nav ">
+			<div class="content-left">
+				<nav class="primary"> 
+					<ul> 
+						<li class="current-menu-item"><a href="#"><i class="icon icon-home"></i></a></li> 
+						<li><a href="#">Европа     </a></li>
+						<li><a href="#">Азия      </a></li>
+						<li><a href="#">Африка     </a></li>
+						<li><a href="#">Америка      </a></li>
+						<li><a href="#">Австралия и Океания    </a></li>
+						<li><a href="#">Украина</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content-right">
+				<form class="search">
+					<input type="text" name="s" id="search-input">
+					<button type="button" class="but-yellow">поиск</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="main-content">
+			<div class="content-left">
+				<!-- секция Европа -->
+				<section class="europe">
+					<div class="section-title"><span>ЕВРОПА</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-1.jpg">
+
+								<span class="name">Австрия</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-2.jpg">
+								<span class="name">Албания</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-3.jpg">
+								<span class="name">Андорра</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-4.jpg">
+								<span class="name">Белоруссия</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-5.jpg">
+								<span class="name">Бельгия</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/eu-6.jpg">
+								<span class="name">Болгария</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Европы</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Европа -->				
+				<!-- секция Азия -->
+				<section class="europe">
+					<div class="section-title"><span>Азия</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-1.jpg">
+
+								<span class="name">Азербайджан</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-2.jpg">
+								<span class="name">Армения</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-3.jpg">
+								<span class="name">Афганистан</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-4.jpg">
+								<span class="name">Бангладеш</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-5.jpg">
+								<span class="name">Бахрейн</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/as-6.jpg">
+								<span class="name">Бруней</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Азии</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Азия -->		
+				<!-- секция Америка-->
+				<section class="europe">
+					<div class="section-title"><span>Америка</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-1.jpg">
+
+								<span class="name">Антигуа и Барбуда</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-2.jpg">
+								<span class="name">Багамские Острова</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-3.jpg">
+								<span class="name">Барбадос</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-4.jpg">
+								<span class="name">Белиз</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-5.jpg">
+								<span class="name">Гаити</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/am-6.jpg">
+								<span class="name">Гватемала</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Америки</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Америка -->	
+				<!-- секция Африка-->
+				<section class="europe">
+					<div class="section-title"><span>Африка</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-1.jpg">
+
+								<span class="name">Антигуа и Барбуда</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-2.jpg">
+								<span class="name">Багамские Острова</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-3.jpg">
+								<span class="name">Барбадос</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-4.jpg">
+								<span class="name">Белиз</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-5.jpg">
+								<span class="name">Гаити</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-6.jpg">
+								<span class="name">Гватемала</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Африки</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Африка -->
+				<!-- секция Австралия и Океания-->
+				<section class="europe">
+					<div class="section-title"><span>Австралия и Океания</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-1.jpg">
+
+								<span class="name">Антигуа и Барбуда</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-2.jpg">
+								<span class="name">Багамские Острова</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-3.jpg">
+								<span class="name">Барбадос</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-4.jpg">
+								<span class="name">Белиз</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-5.jpg">
+								<span class="name">Гаити</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-6.jpg">
+								<span class="name">Гватемала</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Австралии и Океании</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Австралия и Океания -->				
+				<!-- секция Украина-->
+				<section class="europe">
+					<div class="section-title"><span>Украина</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-1.jpg">
+
+								<span class="name">Антигуа и Барбуда</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-2.jpg">
+								<span class="name">Багамские Острова</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-3.jpg">
+								<span class="name">Барбадос</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-4.jpg">
+								<span class="name">Белиз</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-5.jpg">
+								<span class="name">Гаити</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-6.jpg">
+								<span class="name">Гватемала</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Австралии и Океании</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Украина -->	
+				<!-- секция Фотогалерея-->
+				<section class="europe">
+					<div class="section-title"><span>Фотогалерея</span></div>
+					<div class="country flex-container">
+						<!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-1.jpg">
+
+								<span class="name">Антигуа и Барбуда</span>
+
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-2.jpg">
+								<span class="name">Багамские Острова</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-3.jpg">
+								<span class="name">Барбадос</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-4.jpg">
+								<span class="name">Белиз</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-5.jpg">
+								<span class="name">Гаити</span>
+							</a>
+						</div>
+						<!--/ country-item --><!-- country-item -->
+						<div class="country-item">
+							<a href="#">
+								<img src="/img/af-6.jpg">
+								<span class="name">Гватемала</span>
+							</a>
+						</div>
+						<!--/ country-item -->
+						
+						<div class="section-bottom"><span>Посмотреть весь список стран Австралии и Океании</span> <a href="#" class="btn-yellow-round">перейти</a></div>
+					</div>
+				</section>
+				<!--/ секция Фотогалерея -->
+			</div>
+			<div class="content-right ">
+				<aside class="aside">
+					<!-- side-widget -->
+					<div class="side-widget">
+						<div class="subscribe-title">
+							<img src="img/subscribe-title.jpg">
+						</div>
+						<form class="subscribe-form">
+						<div class="form-soc">
+							<a href=""><i class="icon icon-fb"></i></a>
+							<a href=""><i class="icon icon-gp"></i></a>
+							<a href=""><i class="icon icon-in"></i></a>
+							<a href=""><i class="icon icon-ok"></i></a>
+							<a href=""><i class="icon icon-tw"></i></a>
+							<a href=""><i class="icon icon-vk"></i></a>
+						</div>
+						<input type="email" name="email" id="email">
+							<button type="submit" >Подписаться</button>
+						</form>
+					</div>
+					<!--/ side-widget -->
+					<!-- side-widget -->
+					<div class="side-widget">
+						<div class="side-widget-title ">
+							<span>Это интересно</span>
+						</div>
+						<ul>
+							<li><a href="">
+								<img src="img/side-1.jpg" alt="placeholder+image">
+							</a>
+							<div class="meta">
+								<span class="date">18.09.2015</span>
+								<span class="photo">(9) фото</span>
+							</div>
+							<a href=""  class="widget-text">Новость о путеществиях 
+								и интересных событиях.</a>
+							</li><li><a href="">
+							<img src="img/side-2.jpg" alt="placeholder+image">
+						</a>
+						<div class="meta">
+							<span class="date">18.09.2015</span>
+							<span class="photo">(9) фото</span>
+						</div>
+						<a href=""  class="widget-text">Новость о путеществиях 
+							и интересных событиях.</a>
+						</li><li><a href="">
+						<img src="img/side-3.jpg" alt="placeholder+image">
+					</a>
+					<div class="meta">
+						<span class="date">18.09.2015</span>
+						<span class="photo">(9) фото</span>
+					</div>
+					<a href=""  class="widget-text">Новость о путеществиях 
+						и интересных событиях.</a>
+					</li><li><a href="">
+					<img src="img/side-4.jpg" alt="placeholder+image">
+				</a>
+				<div class="meta">
+					<span class="date">18.09.2015</span>
+					<span class="photo">(9) фото</span>
+				</div>
+				<a href=""  class="widget-text">Новость о путеществиях 
+					и интересных событиях.</a>
+				</li><li><a href="">
+				<img src="img/side-5.jpg" alt="placeholder+image">
+			</a>
+			<div class="meta">
+				<span class="date">18.09.2015</span>
+				<span class="photo">(9) фото</span>
+			</div>
+			<a href=""  class="widget-text">Новость о путеществиях 
+				и интересных событиях.</a>
+			</li><li><a href="">
+			<img src="img/side-1-1.jpg" alt="placeholder+image">
+		</a>
+		<div class="meta">
+			<span class="date">18.09.2015</span>
+			<span class="photo">(9) фото</span>
+		</div>
+		<a href=""  class="widget-text">Новость о путеществиях 
+			и интересных событиях.</a>
+		</li>
+	</ul>
+	<div class="widget-bootom">
+		<a href="">Читать все статьи</a>
+	</div>
+</div>
+<!--/ side-widget -->	
+<!-- side-widget -->
+<div class="side-widget">
+	<div class="side-widget-title title-tabs">
+		<span class="active">Популярные</span><span class="">Комментируемые</span>
+	</div>
+	<ul class="tab-content">
+		<li><a href="">
+			<img src="img/pop-1.png" alt="placeholder+image">
+		</a>
+		<div class="meta">
+			<span class="date">18.09.2015</span>
+
+		</div>
+		<a href=""  class="widget-text">На этом месте
+			будет инфа  о 
+			данной статье.</a>
+			<p class="meta-b">
+				<span><i class="icon icon-comments"></i> 12</span>
+				<span><i class="icon icon-views"></i> 12</span>
+
+			</p>
+		</li><li><a href="">
+		<img src="img/pop-1.png" alt="placeholder+image">
+	</a>
+	<div class="meta">
+		<span class="date">18.09.2015</span>
+
+	</div>
+	<a href=""  class="widget-text">На этом месте
+		будет инфа  о 
+		данной статье.</a>
+		<p class="meta-b">
+			<span><i class="icon icon-comments"></i> 12</span>
+			<span><i class="icon icon-views"></i> 12</span>
+
+		</p>
+	</li><li><a href="">
+	<img src="img/pop-1.png" alt="placeholder+image">
+</a>
+<div class="meta">
+	<span class="date">18.09.2015</span>
+
+</div>
+<a href=""  class="widget-text">На этом месте
+	будет инфа  о 
+	данной статье.</a>
+	<p class="meta-b">
+		<span><i class="icon icon-comments"></i> 12</span>
+		<span><i class="icon icon-views"></i> 12</span>
+
+	</p>
+</li><li><a href="">
+<img src="img/pop-1.png" alt="placeholder+image">
+</a>
+<div class="meta">
+	<span class="date">18.09.2015</span>
+
+</div>
+<a href=""  class="widget-text">На этом месте
+	будет инфа  о 
+	данной статье.</a>
+	<p class="meta-b">
+		<span><i class="icon icon-comments"></i> 12</span>
+		<span><i class="icon icon-views"></i> 12</span>
+
+	</p>
+</li>
+
+
+</ul>
+</div>
+<!--/ side-widget -->
+<!-- side-widget -->
+<div class="side-widget">
+	<img src="img/widget-fb.jpg" alt="" class="soc-widget">
+</div>
+<!--/ side-widget -->
+<!-- side-widget -->
+<div class="side-widget">
+	<img src="img/widget-vk.jpg" alt="" class="soc-widget">
+</div>
+<!--/ side-widget -->
+</aside>
+</div>
+</div>
+
+</div>
+
+
+
+<footer>
+	<div class="container">
+		<div class="content-left flex-container">
+
+
+			<div class="foo-widget"><div class="widget-title">Европа</div>        
+			<ul>
+				<li><a href="">Австралия	</a></li>
+				<li><a href="">Вануату	</a></li>
+				<li><a href="">Кирибати	</a></li>
+				<li><a href="">Микронезия	</a></li>
+				<li><a href="">Палау	</a></li>
+				<li><a href="">Папуа - </a></li>
+				<li><a href="">Самоа		</a></li>
+				<li><a href="">Тонга	</a></li>
+				<li><a href="">Тувалу	</a></li>
+				<li><a href="">Фиджи	</a></li>
+			</ul>
+		</div>
+		<div class="foo-widget"><div class="widget-title">Азия </div>         
+		<ul>
+			<li><a href="">Австралия	</a></li>
+			<li><a href="">Вануату	</a></li>
+			<li><a href="">Кирибати	</a></li>
+			<li><a href="">Микронезия	</a></li>
+			<li><a href="">Палау	</a></li>
+			<li><a href="">Папуа - </a></li>
+			<li><a href="">Самоа		</a></li>
+			<li><a href="">Тонга	</a></li>
+			<li><a href="">Тувалу	</a></li>
+			<li><a href="">Фиджи	</a></li>
+		</ul>
+	</div>
+	<div class="foo-widget"><div class="widget-title">Африка</div>        
+	<ul>
+		<li><a href="">Австралия	</a></li>
+		<li><a href="">Вануату	</a></li>
+		<li><a href="">Кирибати	</a></li>
+		<li><a href="">Микронезия	</a></li>
+		<li><a href="">Палау	</a></li>
+		<li><a href="">Папуа - </a></li>
+		<li><a href="">Самоа		</a></li>
+		<li><a href="">Тонга	</a></li>
+		<li><a href="">Тувалу	</a></li>
+		<li><a href="">Фиджи	</a></li>
+	</ul>
+</div>
+<div class="foo-widget"><div class="widget-title">Америка </div>      
+<ul>
+	<li><a href="">Австралия	</a></li>
+	<li><a href="">Вануату	</a></li>
+	<li><a href="">Кирибати	</a></li>
+	<li><a href="">Микронезия	</a></li>
+	<li><a href="">Палау	</a></li>
+	<li><a href="">Папуа - </a></li>
+	<li><a href="">Самоа		</a></li>
+	<li><a href="">Тонга	</a></li>
+	<li><a href="">Тувалу	</a></li>
+	<li><a href="">Фиджи	</a></li>
+</ul>
+</div>
+<div class="foo-widget"><div class="widget-title">Австралия</div>     
+<ul>
+	<li><a href="">Австралия	</a></li>
+	<li><a href="">Вануату	</a></li>
+	<li><a href="">Кирибати	</a></li>
+	<li><a href="">Микронезия	</a></li>
+	<li><a href="">Палау	</a></li>
+	<li><a href="">Папуа - </a></li>
+	<li><a href="">Самоа		</a></li>
+	<li><a href="">Тонга	</a></li>
+	<li><a href="">Тувалу	</a></li>
+	<li><a href="">Фиджи	</a></li>
+</ul>
+</div>
+<div class="foo-widget"><div class="widget-title">Украина </div>      
+<ul>
+	<li><a href="">Австралия	</a></li>
+	<li><a href="">Вануату	</a></li>
+	<li><a href="">Кирибати	</a></li>
+	<li><a href="">Микронезия	</a></li>
+	<li><a href="">Палау	</a></li>
+	<li><a href="">Папуа - </a></li>
+	<li><a href="">Самоа		</a></li>
+	<li><a href="">Тонга	</a></li>
+	<li><a href="">Тувалу	</a></li>
+	<li><a href="">Фиджи	</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- jQuery -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<!-- Bootstrap JavaScript -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<!-- Мои скрипты -->
+<!-- <script src="js/main.js"></script> -->
 </body>
 </html>

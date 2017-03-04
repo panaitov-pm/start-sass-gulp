@@ -13,6 +13,9 @@
 
 $browser-context: 16; // Default
 
+// функция переводит шрифт в писелях в em
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
+
+

@@ -1,5 +1,8 @@
+*.log
+*.sublime-project
+
 /node_modules
-/dist
+/dist/
 /app/img/*
 /app/plugins
 /app/fonts/*
