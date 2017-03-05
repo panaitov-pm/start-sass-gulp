@@ -75,8 +75,9 @@ body {
   width: 1003px;
   max-width: 100%;
   margin: 0 auto;
-
-  background-color: #fdfafa;
+ .main-content{
+  background-color: #fff;
+ }
 
   @extend .clear;
 }
@@ -230,7 +231,7 @@ header {
 
   text-align: center;
 
-  background: url(/img/header-bg.png) no-repeat center bottom;
+  background: url(/img/header-bg.png) no-repeat center bottom,url(../img/oblaka.png) no-repeat center 1px;
 }
 
 .main-content {
@@ -350,13 +351,13 @@ section {
 
   -webkit-flex-wrap: wrap;
 
-      -ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .country {

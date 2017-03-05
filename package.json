@@ -25,9 +25,7 @@
     "gulp-combine-media-queries": "^0.2.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-group-css-media-queries": "^1.2.0",
-    "gulp-inject": "^4.2.0",
     "holderjs": "^2.9.4",
-    "jquery": "^3.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

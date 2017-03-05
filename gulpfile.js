@@ -46,30 +46,16 @@ gulp.task('npm:plugins',function(){
   }
 });
 
+ // It's not necessary to read the files (will speed up things), we're only after their paths: 
+ var sources = gulp.src(['./dist/js/*.js', './dist/css/*.css'], {read: true});
 // авто подключение стилей и скриптов
 gulp.task('inject', function () {
   var target = gulp.src('./dist/*.html');
-  // It's not necessary to read the files (will speed up things), we're only after their paths: 
-  var sources = gulp.src(['./dist/js/*.js', './dist/css/*.css'], {read: false});
- 
   return target.pipe(inject(sources,{relative:true}))
-    .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./dist'));
 });
 
-// Static Server + watching all files
-gulp.task('serve', function() {
-  browserSync.init({
-    server: "./dist"
-  });
-  gulp.watch('app/img/icons/*.png', ['sprite']).on('change', browserSync.reload);
-  gulp.watch('app/img/**', ['compress']).on('change', browserSync.reload);
-  gulp.watch("app/scss/*.scss", ['sass']);
-  gulp.watch("app/fonts/**", ['fonts:build']);
-  gulp.watch("app/html/**/*.html",['html:build']);
-  gulp.watch("app/js/*.js",['js:build']).on('change', browserSync.reload);
-  gulp.watch("dist/*.html").on('change',['inject'], browserSync.reload);
 
-});
 
 //Оптимизация изображений
 gulp.task('compress', function() {
@@ -101,8 +87,8 @@ gulp.task('html:build', function () {
       prefix: '@@',
       basepath: '@file'
     }))
-        .pipe(gulp.dest('dist')); //выгрузим их в папку build
-      });
+    .pipe(gulp.dest('dist'));
+  });
 
 // билдим шрифты
 gulp.task('fonts:build', function() {
@@ -172,8 +158,25 @@ gulp.task('sprite', function () {
 
 });
 
-gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins','inject'],function () {
+
+
+gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins'],function () {
  browserSync.reload();
 });
 
-gulp.task('default', ['build','serve']);
+// Static Server + watching all files
+gulp.task('serve', function() {
+  browserSync.init({
+    server: "./dist"
+  });
+  gulp.watch('app/img/icons/*.png', ['sprite']).on('change', browserSync.reload);
+  gulp.watch('app/img/**', ['compress']).on('change', browserSync.reload);
+  gulp.watch("app/scss/*.scss", ['sass']);
+  gulp.watch("app/fonts/**", ['fonts:build']);
+  gulp.watch("app/js/*.js",['js:build']).on('change', browserSync.reload);
+  gulp.watch("app/html/**/*.html",['html:build']);
+  gulp.watch("dist/*.html").on('change', browserSync.reload);
+
+});
+
+gulp.task('default', ['serve']);
