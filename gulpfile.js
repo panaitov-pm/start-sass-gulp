@@ -15,6 +15,7 @@ var rename = require("gulp-rename");
 var cssmin = require('gulp-minify-css');
 var plumber = require("gulp-plumber");
 var csscomb = require("gulp-csscomb");
+var cmq = require('gulp-combine-media-queries');
 
 //Базовые настройки
 var config={
@@ -118,6 +119,7 @@ gulp.task('sass', function() {
    browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
  }))
+  .pipe(cmq())
   .on('error', function (err) {
     console.error('Error!', err.message);
   })

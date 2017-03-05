@@ -1,8 +1,8 @@
-//Миксины 
+/*Миксины */
 @import "mixins";
-// Reset
+/* Reset*/
 @import "reset";
-// генерация спрайтов
+/* генерация спрайтов*/
 @import "sprite";
 @include sprites($spritesheet-sprites)
 
@@ -13,17 +13,19 @@
 $color_red:#f34940;
 $font_primary:  "Open Sans", sans-serif;
 
-// миксины
+/* миксины*/
 @mixin button($bgc:$color_red,$height:30,$fz:16,$ff:$font_primary) {
  background-color: $bgc;
  border: none;
  height: $height + px;
  line-height: 1;
  color: #fff;
+ text-decoration: none;
  font-size: em($fz);
  padding: (($height - $fz) / 2 - 2) + px  30px (($height - $fz) / 2) + px;
  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.22) inset;
  font-family: $ff;
+ -webkit-transition:  all .4s;
  transition: all .4s;
  &:hover{
   background-color: darken( $bgc, 8% );
@@ -96,8 +98,12 @@ body {
   width: 100%;
 
   border-bottom: 1px solid #a2a3a3;
+  background: -webkit-linear-gradient(#f2f2f2, #f8f8f8);
   background: linear-gradient(#f2f2f2, #f8f8f8);
   box-shadow: inset 0 -1px 0 0 #d5d6d6;
+  .content-left{
+    padding: 0;
+  }
 
   @extend .clear;
   .search {
@@ -152,6 +158,7 @@ nav {
           height: 4px;
 
           content: "";
+          -webkit-transition:  all .3s ease-in;
           transition: all .3s ease-in;
 
           background-color: #2a2a2a;
@@ -232,6 +239,66 @@ header {
 
 section {
   padding: 0 32px 30px 32px;
+  &.asia{
+    .section-title {
+      span{
+        border-bottom: 6px solid #ff7300;
+      }
+    }
+    .country-item .name {
+      background-color: #ff7300;
+    }
+  }
+  &.america{
+    .section-title {
+      span{
+        border-bottom: 6px solid #8c70ee;
+      }
+    }
+    .country-item .name {
+      background-color: #8c70ee;
+    }
+  }  
+  &.africa{
+    .section-title {
+      span{
+        border-bottom: 6px solid #ff8773;
+      }
+    }
+    .country-item .name {
+      background-color: #ff8773;
+    }
+  }
+  &.australia{
+    .section-title {
+      span{
+        border-bottom: 6px solid #00cac8;
+      }
+    }
+    .country-item .name {
+      background-color: #00cac8;
+    }
+  }  
+  &.ukraine{
+    .section-title {
+      span{
+        border-bottom: 6px solid #00bc52;
+      }
+    }
+    .country-item .name {
+      background-color: #00bc52;
+    }
+  }  
+  &.gallery{
+    .section-title {
+      span{
+        border-bottom: 6px solid #cb5791;
+      }
+    }
+    .country-item .name {
+      background-color: #cb5791;
+    }
+  }
 
   @extend .clear;
   .section-title {
@@ -276,10 +343,20 @@ section {
 }
 
 .flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+
+      -ms-flex-wrap: wrap;
+
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .country {
@@ -294,10 +371,16 @@ section {
 
   max-width: 207px;
   margin-bottom: 12px;
+  
   img {
     display: block;
 
     width: 100%;
+    -webkit-transition:  all .4s;
+    transition: all .4s;
+    &:hover{
+      opacity: .8;
+    }
   }
   a {
     text-decoration: none;
@@ -336,32 +419,85 @@ a.btn-yellow-round {
 footer {
   margin-top: 46px;
 
+
+
+
   @extend .clear;
   .container {
-    padding: 70px 0;
+   padding: 39px 0 47px 0;
 
-    background-color: rgba(0, 35, 55, .37);
-    .content-left {
-      padding-left: 56px;
+   background-color: rgba(0, 35, 55, .37);
+   .content-left {
+    padding-left: 56px;
+  }
+  .content-right{
+   .read{
+    @include button(#ffb500); 
+    font-weight: 800;
+    padding: 5px 37px 7px;
+  }
+  text-align: center;
+  .foo-soc{
+    color: #fff;
+    .icon-wrapper{
+      background-color: rgba(255, 255, 255, 0.3);
+      max-width: 196px;
+      padding: 6px 1px;
+      margin: 18px auto;
     }
   }
+  .logo-footer {
+    margin: 0 0 20px 0;
+    display: block;
+  }
+
+}
+}
 }
 
 .foo-widget {
-  .widget-title {
-    color: #fff;
-  }
-  a {
-    font-size: em(12.5);
-    line-height: 20px;
+ &:nth-child(1)  .widget-title{
+  background: url(../img/fw-1.png) no-repeat left bottom;
 
-    text-decoration: none;
+}
+&:nth-child(2)  .widget-title{
+  background: url(../img/fw-2.png) no-repeat left bottom;
 
-    color: #fff;
-    &:hover {
-      text-decoration: underline;
-    }
+} 
+&:nth-child(3)  .widget-title{
+  background: url(../img/fw-3.png) no-repeat left bottom;
+
+} 
+&:nth-child(4)  .widget-title{
+  background: url(../img/fw-4.png) no-repeat left bottom;
+
+} 
+&:nth-child(5)  .widget-title{
+  background: url(../img/fw-5.png) no-repeat left bottom;
+
+}  
+&:nth-child(6)  .widget-title{
+  background: url(../img/fw-6.png) no-repeat left bottom;
+}
+.widget-title {
+  color: #fff;
+  padding-bottom: 11px;
+  margin-bottom: 25px;
+
+
+
+}
+a {
+  font-size: em(12.5);
+  line-height: 20px;
+
+  text-decoration: none;
+
+  color: #fff;
+  &:hover {
+    text-decoration: underline;
   }
+}
 }
 
 .aside {
@@ -379,6 +515,7 @@ footer {
    margin-bottom: 15px;
    padding-bottom: 8px;
    margin-top: -13px;
+
  }
  .subscribe-form{
    margin-bottom: 28px;
@@ -396,6 +533,7 @@ footer {
     border: 1px solid #cccccc;
     height: 30px;
     margin-bottom: 15px;
+    padding: 0 10px;
   }
   button{
     @include button();
@@ -410,6 +548,17 @@ footer {
   text-align: right;
   padding-right: 30px;
   margin-bottom: 46px;
+  .subsribed {
+    color: #b4b4b4;
+    .subscribe-count{
+      text-decoration: underline;
+    }
+    .icon-chel {
+      position: relative;
+      top: 3px;
+      margin-right: 8px;
+    }
+  }
   a{
     color: #000;
     font-size: em(13.75);
