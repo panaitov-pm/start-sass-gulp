@@ -15,7 +15,8 @@ var rename = require("gulp-rename");
 var cssmin = require('gulp-minify-css');
 var plumber = require("gulp-plumber");
 var csscomb = require("gulp-csscomb");
-var cmq = require('gulp-combine-media-queries');
+var gcmq = require('gulp-group-css-media-queries');
+var inject = require('gulp-inject');
 
 //Базовые настройки
 var config={
@@ -45,6 +46,16 @@ gulp.task('npm:plugins',function(){
   }
 });
 
+// авто подключение стилей и скриптов
+gulp.task('inject', function () {
+  var target = gulp.src('./dist/*.html');
+  // It's not necessary to read the files (will speed up things), we're only after their paths: 
+  var sources = gulp.src(['./dist/js/*.js', './dist/css/*.css'], {read: false});
+ 
+  return target.pipe(inject(sources,{relative:true}))
+    .pipe(gulp.dest('./dist'));
+});
+
 // Static Server + watching all files
 gulp.task('serve', function() {
   browserSync.init({
@@ -56,7 +67,8 @@ gulp.task('serve', function() {
   gulp.watch("app/fonts/**", ['fonts:build']);
   gulp.watch("app/html/**/*.html",['html:build']);
   gulp.watch("app/js/*.js",['js:build']).on('change', browserSync.reload);
-  gulp.watch("dist/*.html").on('change', browserSync.reload);
+  gulp.watch("dist/*.html").on('change',['inject'], browserSync.reload);
+
 });
 
 //Оптимизация изображений
@@ -119,7 +131,7 @@ gulp.task('sass', function() {
    browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
  }))
-  .pipe(cmq())
+  .pipe(gcmq())
   .on('error', function (err) {
     console.error('Error!', err.message);
   })
@@ -133,7 +145,7 @@ gulp.task('sprite', function () {
   var spriteData = gulp.src('app/img/icons/*.png')
   .pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.scss',
+    cssName: '_sprite.scss',
     cssVarMap: function (sprite) {
      if (sprite.name.indexOf('-hover') !== -1){
        sprite.name ='.icon-' + sprite.name.replace('-hover', ':hover');
@@ -160,7 +172,7 @@ gulp.task('sprite', function () {
 
 });
 
-gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins'],function () {
+gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins','inject'],function () {
  browserSync.reload();
 });
 
