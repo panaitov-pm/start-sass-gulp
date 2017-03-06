@@ -71,13 +71,27 @@ body {
   background-position: center top;
 }
 
+.header-wrapper{
+ position: relative;
+ .logo-small {
+  position: absolute;
+  left: 35px;
+  top: -94px;
+}
+.lang-switcher {
+  position: absolute;
+  top: -61px;
+  right: 99px;
+}
+}
+
 .container {
   width: 1003px;
   max-width: 100%;
   margin: 0 auto;
- .main-content{
-  background-color: #fff;
- }
+  .main-content{
+    background-color: #fff;
+  }
 
   @extend .clear;
 }
@@ -227,7 +241,7 @@ header {
   position: relative;
 
   margin-bottom: -3px;
-  padding: 165px 0 45px 0;
+  padding: 111px 0 45px 0;
 
   text-align: center;
 

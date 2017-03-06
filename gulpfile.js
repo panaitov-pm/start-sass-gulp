@@ -16,7 +16,6 @@ var cssmin = require('gulp-minify-css');
 var plumber = require("gulp-plumber");
 var csscomb = require("gulp-csscomb");
 var gcmq = require('gulp-group-css-media-queries');
-var inject = require('gulp-inject');
 
 //Базовые настройки
 var config={
