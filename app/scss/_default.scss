@@ -1,0 +1,38 @@
+*
+{
+	box-sizing:border-box;
+}
+.clear:after
+{
+	display:block;
+	visibility:hidden;
+	clear:both;
+
+	height:0;
+
+	content:".";
+}
+.row{
+	@extend .clear;
+}
+.icon
+{
+	display:inline-block;
+}
+
+input
+{
+	outline:none;
+}
+
+button
+{
+	cursor:pointer;
+}
+
+
+
+.text-center
+{
+	text-align:center;
+}
