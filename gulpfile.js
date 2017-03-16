@@ -1,5 +1,10 @@
-//Первым делом запустить npm update для обновления, получения пакетов
-//которые перечисленны в package.json
+// Первым делом запустить 
+// npm init
+// поcле
+// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb
+// в конце для старта gulp
+// gulp   
+
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
