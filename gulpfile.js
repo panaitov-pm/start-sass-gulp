@@ -1,8 +1,8 @@
 // Первым делом запустить 
 // npm init
 // поcле
-// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb
-// в конце для старта gulp
+// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries
+// в конце для старта 
 // gulp   
 
 var gulp        = require('gulp');
@@ -183,4 +183,4 @@ gulp.task('serve', function() {
 
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['build','serve']);
