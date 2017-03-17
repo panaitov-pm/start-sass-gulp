@@ -1,7 +1,7 @@
 // Первым делом запустить 
 // npm init
 // поcле
-// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries
+// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries gulp-notify
 // в конце для старта 
 // gulp   
 
@@ -21,6 +21,7 @@ var cssmin = require('gulp-minify-css');
 var plumber = require("gulp-plumber");
 var csscomb = require("gulp-csscomb");
 var gcmq = require('gulp-group-css-media-queries');
+var notify = require( 'gulp-notify' );
 
 //Базовые настройки
 var config={
@@ -116,7 +117,13 @@ gulp.task('ftp', function () {
 gulp.task('sass', function() {
   return gulp.src("app/scss/*.scss")
   .pipe(sourcemaps.init({loadMaps: true}))
-  .pipe(sass({outputStyle: 'expanded'}))
+  .pipe(sass({outputStyle: 'expanded'})
+    .on( 'error', notify.onError(
+      {
+        message: "<%= error.message %>",
+        title  : "Ошибка SASS!"
+      } ) )
+    )
   .pipe(autoprefixer({
    browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
