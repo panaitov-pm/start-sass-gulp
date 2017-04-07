@@ -1,14 +1,14 @@
 // Миксины 
 @import "mixins";
-// Reset
-@import "reset";
+// Normalize
+@import "normalize"; 
 // Default
 @import "default";
 // Wordpress styles
 @import "wordpress";
 // генерация спрайтов
 @import "sprite";
-@include sprites($spritesheet-sprites)
+@include sprites($spritesheet-sprites) 
 
 
 //Мои стили
