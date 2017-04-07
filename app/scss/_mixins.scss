@@ -11,38 +11,27 @@
 	&::-webkit-input-placeholder { @content }
 }
 
-$browser-context: 16; // Default
+
 
 // функция переводит шрифт в писелях в em
 @function em($pixels, $context: $browser-context) {
 	@return #{$pixels/$context}em;
 }
 
-/*
-Миксин для генерации медиазапросов
 
-	за основу взята статья https://css-tricks.com/conditional-media-query-mixins/
+// Миксин для генерации медиазапросов
 
-	Пример вставки: 
-	.sidebar {
-	  width: 33.33%;
-	  @include bp(md) {
-	    width: 100%;
-	  }
-	}
- */
+// 	за основу взята статья https://css-tricks.com/conditional-media-query-mixins/
+
+// 	Пример вставки: 
+// 	.sidebar {
+// 	  width: 33.33%;
+// 	  @include bp(md) {
+// 	    width: 100%;
+// 	  }
+// 	}
+ 
  @mixin mq($point) {
-
-  /* Широкоформатный экран — 1200px */
-  $bp-lg: "(max-width : 75.063em)";
-  /* Десктоп — 992px */
-  $bp-md:"(max-width : 62.063em)";
- /* Планшеты — 768px */
- $bp-sm:"(max-width : 48.063em)";
- /* Телефоны —  544px */
- $bp-xs:"(max-width : 34.063em)";
- /* Айфон в портретном режиме — 320px */
- $bp-ms:"(max-width : 20.063em)";
 
  @if $point == lg {
  	@media #{$bp-lg} { @content; }

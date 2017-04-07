@@ -1,0 +1,21 @@
+.clear:after
+{
+	display:block;
+	visibility:hidden;
+	clear:both;
+
+	height:0;
+
+	content:".";
+}
+.row{
+	
+	@extend .clear;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} { 
+		width: 100% / 12 * $i;
+	}
+
+}
