@@ -128,7 +128,6 @@ gulp.task('sass', function() {
    browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
    cascade: false
  }))
-  .pipe(gcmq())
   .on('error', function (err) {
     console.error('Error!', err.message);
   })
