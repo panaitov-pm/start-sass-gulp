@@ -149,7 +149,7 @@ gulp.task('sprite', function () {
        sprite.name = 'icon-' + sprite.name;
      }
    },
-   imgPath:'/img/sprite.png',
+   imgPath:'../img/sprite.png',
    cssOpts: {
     cssSelector: function (item) {
                 // If this is a hover sprite, name it as a hover one (e.g. 'home-hover' -> 'home:hover')

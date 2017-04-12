@@ -6,16 +6,21 @@
 
 	height:0;
 
-	content:".";
+	content:"";
 }
 .row{
 	
 	@extend .clear;
 }
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 @for $i from 1 through 12 {
 	.col-#{$i} { 
 		width: 100% / 12 * $i;
+		float: left;
 	}
 
 }
