@@ -1,9 +1,30 @@
+// сброс
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+// иконки
 .icon
 {
 	display:inline-block;
 }
 
+// выравнивание
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
 .text-center
 {
 	text-align:center;
+}
+
+.bold{
+	font-weight: 600;
+}
+.uppercase{
+	text-transform: uppercase;
 }

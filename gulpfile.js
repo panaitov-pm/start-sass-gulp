@@ -1,7 +1,7 @@
 // Первым делом запустить 
 // npm init
 // поcле
-// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries gulp-notify
+// npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries gulp-notify gulp-concat
 // в конце для старта 
 // gulp   
 
@@ -22,6 +22,7 @@ var plumber = require("gulp-plumber");
 var csscomb = require("gulp-csscomb");
 var gcmq = require('gulp-group-css-media-queries');
 var notify = require( 'gulp-notify' );
+var concat = require('gulp-concat');
 
 //Базовые настройки
 var config={
@@ -78,6 +79,7 @@ gulp.task('compress', function() {
 gulp.task('js:build', function () {
     gulp.src('app/js/*.js') //Найдем наш main файл
     .pipe(gulp.dest('dist/js'))
+    .pipe(concat('all.js'))
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
@@ -101,6 +103,13 @@ gulp.task('fonts:build', function() {
   .pipe(gulp.dest('dist/fonts'));
 });
 
+// конкантенация js скриптов
+gulp.task('concat', function() {
+  return gulp.src('app/*.js')
+  .pipe(concat('all-lib.js'))
+  .pipe(gulp.dest('dist/js'));
+});
+
 //ФТП загрузка файлов
 gulp.task('ftp', function () {
   return gulp.src('dist/**/*')
@@ -119,10 +128,10 @@ gulp.task('sass', function() {
   .pipe(sourcemaps.init({loadMaps: true}))
   .pipe(sass({outputStyle: 'expanded'})
     .on( 'error', notify.onError(
-      {
-        message: "<%= error.message %>",
-        title  : "Ошибка SASS!"
-      } ) )
+    {
+      message: "<%= error.message %>",
+      title  : "Ошибка SASS!"
+    } ) )
     )
   .pipe(autoprefixer({
    browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"],
@@ -170,7 +179,7 @@ gulp.task('sprite', function () {
 
 
 
-gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins'],function () {
+gulp.task('build', ['sprite','compress','sass','fonts:build','js:build','html:build','npm:plugins','concat'],function () {
  browserSync.reload();
 });
 
