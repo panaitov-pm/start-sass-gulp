@@ -1,0 +1,39 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Данный пакет содержит в себе необходимые npm плагины для быстрой верстки:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karakushan/start-sass-gulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karakushan/start-sass-gulp/issues"
+  },
+  "homepage": "https://github.com/karakushan/start-sass-gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-file-include": "^1.1.0",
+    "gulp-ftp": "^1.1.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "^6.5.0"
+  }
+}
