@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/karakushan/start-sass-gulp#readme",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",

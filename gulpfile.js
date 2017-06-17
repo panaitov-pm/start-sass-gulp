@@ -1,4 +1,6 @@
 // Первым делом запустить 
+// npm i
+// или же
 // npm init
 // поcле
 // npm install --save-dev gulp browser-sync gulp-sass  gulp.spritesmith  gulp-autoprefixer  gulp-sourcemaps gulp-util gulp-ftp gulp-file-include gulp-imagemin  gulp-uglify gulp-rename  gulp-minify-css gulp-plumber gulp-csscomb gulp-csscomb gulp gulp-group-css-media-queries gulp-notify gulp-concat

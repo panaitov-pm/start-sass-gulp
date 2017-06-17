@@ -1,20 +1,24 @@
 // Глобальные переменные
 @import "variables";
 
-// модульная сетка
-// @import "grid";
+// Бутстрап
+@import "bootstrap-sass/assets/stylesheets/_bootstrap";
 
 // Миксины 
 @import "mixins";
-// Normalize
-@import "normalize"; 
+
 // Default
 @import "default";
+
 // Wordpress styles
 @import "wordpress";
+
 // генерация спрайтов
 @import "sprite";
 @include sprites($spritesheet-sprites) 
 
+//Основные стили  
+@import "style";
 
-//Мои стили  
+//Медиа-запросы 
+@import "media"; 
