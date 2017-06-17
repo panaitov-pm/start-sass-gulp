@@ -1,0 +1,40 @@
+/*
+Theme Name: Theme
+Theme URI: http://profglobal.ru/
+Author: Vitaliy Karakushan
+Author URI: http://profglobal.ru/
+Description: Введите описание вашей темы
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: теги темы через запятую
+Text Domain: domain
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+// Глобальные переменные
+@import "variables";
+
+// Бутстрап
+@import "bootstrap-sass/assets/stylesheets/_bootstrap";
+
+// Миксины 
+@import "mixins";
+
+// Default
+@import "default";
+
+// Wordpress styles
+@import "wordpress";
+
+// генерация спрайтов
+@import "sprite";
+@include sprites($spritesheet-sprites) 
+
+//Основные стили  
+@import "styles";     
+
+//Медиа-запросы 
+@import "media"; 
