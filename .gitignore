@@ -5,14 +5,11 @@
 /.idea/
 /node_modules/
 /dist/
-/app/img/*
-/app/plugins
-/app/fonts/*
-/app/js/*
-/app/html/*
+/app/
 !/app/img/.gitkeep.txt
+!/app/img/icons/.gitkeep.txt
 !/app/fonts/.gitkeep.txt
-!/app/js/.gitkeep.txt
+!/app/js/main.js
 !/app/html/.gitkeep.txt
 !/app/html/index.html
 
